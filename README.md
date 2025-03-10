@@ -30,6 +30,7 @@ It allows the users to make minor changes to their profile, such as their name a
 
 [Desktop](./Desktop-demo.png)
 
+
 [Mobile](./Mobile-demo.png)
 ## Figma
   
