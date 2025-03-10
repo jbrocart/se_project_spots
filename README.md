@@ -1,21 +1,37 @@
-# Project 3: Spots
 
-### Overview  
+# Spots
 
-* Intro  
-* Figma  
-* Images  
+This is an image sharing social media platform.
+
+## Description
+
+The webpage is made to display correctly on popular screen sizes.
+It allows the users to make minor changes to their profile, such as their name and description as well as, delete photos, upload photos, and like other posts.
+
+## Tech Stack
+
+-HTML
+
+-CSS
+
+-Responsive Design
+
+-Grid
+
+-Flexbox Properties
+
+-Media Queries
+
+-Fonts
+
+
+
+## Images
+
+[Desktop](./Desktop-demo.png)
+
+[Mobile](./Mobile-demo.png)
+## Figma
   
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+[\[Project Link\]](https://jbrocart.github.io/se_project_spots/) 
+
