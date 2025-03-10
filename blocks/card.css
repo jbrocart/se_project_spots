@@ -35,4 +35,11 @@
   .card__image {
     height: 288px;
   }
+
+  .card__title {
+    max-width: 288px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 }
