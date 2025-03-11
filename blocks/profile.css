@@ -21,6 +21,7 @@
   font-weight: 500;
   font-size: 32px;
   line-height: 1;
+  color: #212121;
   text-overflow: ellipsis;
   overflow: hidden;
   line-clamp: 3;
@@ -35,6 +36,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1;
+  color: #212121b2;
   text-overflow: ellipsis;
   overflow: hidden;
   line-clamp: 3;
@@ -45,7 +47,7 @@
 }
 
 .profile__edit-btn:hover {
-  color: rgba(33, 33, 33, 0.1);
+  opacity: 1;
 }
 
 .profile__edit-btn {
@@ -59,11 +61,12 @@
   line-height: 1;
   padding: 0;
   cursor: pointer;
+  opacity: 0.7;
   color: #212121;
 }
 
 .profile__add-btn:hover {
-  color: rgba(33, 33, 33, 1);
+  opacity: 0.8;
 }
 
 .profile__add-btn {
@@ -101,7 +104,7 @@
   }
 
   .profile__name {
-    font-size: 32px;
+    font-size: 20px;
     max-width: 288px;
   }
 

@@ -24,6 +24,8 @@ It allows the users to make minor changes to their profile, such as their name a
 
 -Fonts
 
+-Semantic Tags
+
 
 
 ## Images
@@ -35,4 +37,7 @@ It allows the users to make minor changes to their profile, such as their name a
 ## Figma
   
 [\[Project Link\]](https://jbrocart.github.io/se_project_spots/) 
+
+
+[Project Video]
 
