@@ -1,6 +1,5 @@
 .footer {
   max-width: 1280px;
-  margin: 0 auto;
 }
 
 .footer__copyright {
@@ -10,10 +9,4 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1;
-  }
-
-  @media screen and (max-widht: 627px) {
-    .footer__copyright {
-      max-width: 288px;
-    }
   }
