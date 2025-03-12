@@ -38,6 +38,8 @@ It allows the users to make minor changes to their profile, such as their name a
   
 [\[Project Link\]](https://jbrocart.github.io/se_project_spots/) 
 
+## Video
 
-[Project Video]
+
+[Video](../Videos/Screen%20Recordings/spots.video.mp4)
 
