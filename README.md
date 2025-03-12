@@ -41,5 +41,5 @@ It allows the users to make minor changes to their profile, such as their name a
 ## Video
 
 
-[Video](../Videos/Screen%20Recordings/spots.video.mp4)
+[Video](https://drive.google.com/file/d/1BsjJlXgLIhjJOymRonCZZgzjWFPFl_Yb/view?usp=sharing)
 
