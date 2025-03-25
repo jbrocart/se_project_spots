@@ -1,0 +1,64 @@
+.modal {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  visibility: hidden;
+}
+
+.modal__opened {
+  visibility: visible;
+}
+
+.modal__container {
+  padding: 32px 50px;
+  max-width: 730px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+}
+
+.modal__title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 32px;
+  color: rgba(33, 33, 33, 1);
+  font-size: 32px;
+  max-width: 169px;
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 32px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.modal_form {
+
+}
+
+.modal__label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0 0 32px;
+}
+
+.modal__input {
+  padding: 0;
+}
+
+.modal__save-btn {
+  margin: 32px 0 32px 50px;
+}
+
+
+
