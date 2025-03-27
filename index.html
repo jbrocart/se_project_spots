@@ -122,16 +122,16 @@
   </footer>
   <div class="modal modal__opened">
     <div class="modal__container">
+      <button type="submit" class="modal__close-btn"></button>
       <h2 class="modal__title">Edit profile</h2>
-      <button type="button" class="modal__close-btn"></button>
       <form name="profile__edit" class="modal__form">
         <label for="name" class="modal__label">
           Name
-          <input id="name" type="text" class="modal__input">
+          <input id="name" type="text" class="modal__input" placeholder="Type your name">
         </label>
         <label for="description" class="modal__label">
           Description
-          <input id="description" type="text" class="modal__input">
+          <input id="description" type="text" class="modal__input" placeholder="Describe yourself">
         </label>
         <button type="submit" class="modal__save-btn">Save</button>
       </form>
