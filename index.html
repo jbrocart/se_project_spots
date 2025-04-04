@@ -127,14 +127,47 @@
       <form name="profile__edit" class="modal__form">
         <label for="name" class="modal__label">
           Name
-          <input id="name" type="text" class="modal__input" placeholder="Type your name">
+          <input
+          id="profile-name-input"
+          type="text"
+          class="modal__input"
+          placeholder="Type your name">
         </label>
         <label for="description" class="modal__label">
           Description
-          <input id="description" type="text" class="modal__input" placeholder="Describe yourself">
+          <input
+           id="profile-description-input"
+           type="text"
+           class="modal__input"
+           placeholder="Describe yourself">
         </label>
         <button type="submit" class="modal__save-btn">Save</button>
       </form>
+    </div>
+  </div>
+  <div class="modal" id="add-card-modal">
+    <div class="modal__container">
+      <button type="button" class="modal__close-btn"></button>
+      <h2 class="modal__title">New Post</h2>
+      <form name="add_card" class="modal__form">
+        <label for="title" class="modal__label">
+          Title
+          <input
+          id="card-title-input"
+          type="text"
+          class="modal__input"
+          placeholder="Post title">
+        </label>
+        <label for="url" class="modal__label">
+          Image URL
+          <input
+          id="card-url-input"
+          type="text"
+          class="modal__input"
+          placeholder="https://unsplash.com/photos/grayscale-photography-of-mans-portrait-u8mWh3Midos">
+      </label>
+      <button type="submit" class="modal__save-btn">Create</button>
+    </form>
     </div>
   </div>
 </div>
