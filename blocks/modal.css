@@ -46,6 +46,7 @@
   opacity: 40%;
   border: none;
   cursor: pointer;
+  background-color: rgba(252, 245, 229, 0);
 }
 
 .modal__title {
@@ -54,7 +55,7 @@
   height: 32px;
   font-size: 32px;
   font-weight: 500;
-  color: rgba(33, 33, 33, 1)
+  color: rgba(33, 33, 33, 1);
 }
 
 .modal__label {
@@ -77,13 +78,13 @@
   border-radius: 8px;
   font-size: 20px;
   font-weight: 500;
-  border: 1px solid rgba(33, 33, 33, 0.4)
+  border: 1px solid rgba(33, 33, 33, 0.4);
 }
 
 .modal__save-btn {
   width: 156px;
   padding: 18px 0;
-  background-color: rgba(33,  33, 33, 1);
+  background-color: rgba(33, 33, 33, 1);
   color: rgba(252, 245, 229, 1);
   border-radius: 8px;
   cursor: pointer;
@@ -100,8 +101,7 @@
 
   .modal__title {
     font-size: 20px;
-    margin-bottom: 24px;
-    padding: 10px 0 34px;
+    margin: 10px 0 34px;
   }
 
   .modal__label {
@@ -114,6 +114,6 @@
   }
 
   .modal__save-btn {
-   width: 100%;
+    width: 100%;
   }
 }
