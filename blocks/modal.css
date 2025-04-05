@@ -11,9 +11,12 @@
   justify-content: center;
   padding: 0 20px;
   visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.4s ease-in-out;
 }
 
 .modal_opened {
+  opacity: 1;
   visibility: visible;
 }
 
@@ -29,6 +32,7 @@
 
 .modal__close-btn:hover {
   opacity: 1;
+  transition: 0.3s ease-in-out;
 }
 
 .modal__close-btn {
@@ -97,7 +101,7 @@
   .modal__title {
     font-size: 20px;
     margin-bottom: 24px;
-    margin: 10px 0 34px;
+    padding: 10px 0 34px;
   }
 
   .modal__label {

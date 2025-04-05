@@ -15,12 +15,11 @@ const profileFormElement = editProfileModal.querySelector('.modal__form');
 const editProfileNameInput = editProfileModal.querySelector('#profile-name-input');
 const editProfileDescriptionInput = editProfileModal.querySelector('#profile-description-input');
 const closeButton = document.querySelector('.modal__close-btn');
-const addCardFormElement = editProfileModal.querySelector('#addCardModal');
-const nameInput = editProfileModal.querySelector('.add_card');
-const linkInput = editProfileModal.querySelector('#card-url-input');
+const addCardFormElement = modal.querySelector('#modal__form');
+const cardTitleInput = document.querySelector('#card-title-input');
+const cardUrlInput = document.querySelector('#card-url-input');
 const addCardModal = document.querySelector('#add-card-modal');
 const addPostButton = document.querySelector('.profile__add-btn');
-const cardTitleInput = document.querySelector('#cardTitleInput');
 
 editProfileNameInput.value = profileNameElement.textContent;
 editProfileDescriptionInput.value = profileDescriptionElement.textContent;
@@ -42,15 +41,11 @@ profileDescriptionElement.textContent = editProfileDescriptionInput.value;
 closeModal();
 }
 
-function openAddCardModal() {
-  addCardModal.classList.add('modal_opened');
-}
-
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
 
-  console.log(titleInput.value);
-  console.log(linkInput.value);
+  console.log('Title:', cardTitleInput.value);
+  console.log('Image URL:', cardUrlInput.value);
 
   closeModal();
 }
