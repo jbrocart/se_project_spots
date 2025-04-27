@@ -26,6 +26,8 @@ It allows the users to make minor changes to their profile, such as their name a
 
 -Semantic Tags
 
+-JS
+
 
 
 ## Images

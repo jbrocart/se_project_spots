@@ -88,3 +88,8 @@ closeButtons.forEach((button) => {
 addPostButton.addEventListener("click", openAddCardModal);
 addCardFormElement.addEventListener("submit", handleAddCardSubmit);
 profileFormElement.addEventListener("submit", handleProfileFormSubmit);
+
+initialCards.forEach(function (item) {
+  console.log(item.name);
+  console.log(item.link);
+});
