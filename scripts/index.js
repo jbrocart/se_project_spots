@@ -1,27 +1,27 @@
 const initialCards = [
   {
     name: "Stormy sky",
-    link: "https://unsplash.com/photos/a-beach-hut-sitting-on-top-of-a-sandy-beach-5VaF7hzo4wc",
+    link: "https://images.unsplash.com/photo-1687847631776-6f1af4b626fb?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Sunset over the ocean",
-    link: "https://unsplash.com/photos/silhouette-of-stone-on-seashore-during-golden-hour-63JKK67yGUE",
+    link: "https://images.unsplash.com/photo-1496482475496-a91f31e0386c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Canyon Arch",
-    link: "https://unsplash.com/photos/grand-canyon-mountain-tNN6zkUnTgg",
+    link: "https://images.unsplash.com/photo-1430797877645-98aa0693fb34?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Beautiful Milky Way in the mountains",
-    link: "https://unsplash.com/photos/pine-trees-during-nighttime-7pUHeP1GRC4",
+    link: "https://images.unsplash.com/photo-1547534887-8d299f2c126b?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Red fish in coral",
-    link: "https://unsplash.com/photos/red-fish-beside-pink-coral-EDfZ0Sjmp_w",
+    link: "https://images.unsplash.com/photo-1516683037151-9a17603a8dc7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     name: "Camping in the mountains uder the stars",
-    link: "https://unsplash.com/photos/person-sitting-near-bonfire-surrounded-by-trees-1azAjl8FTnU",
+    link: "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
 
@@ -46,6 +46,34 @@ const editProfileDescriptionInput = editProfileModal.querySelector(
 
 const cardTitleInput = document.querySelector("#card-title-input");
 const cardUrlInput = document.querySelector("#card-url-input");
+
+const cardTemplate = document.querySelector("#card-template");
+const cardsList = document.querySelector(".cards__list");
+
+function getCardElement(data) {
+  const cardElement = cardTemplate.content
+    .querySelector(".card")
+    .cloneNode(true);
+  const cardTitleEl = cardElement.querySelector(".card__title");
+  const cardImageEl = cardElement.querySelector(".card__image");
+
+  cardImageEl.src = data.link;
+  cardImageEl.alt = data.name;
+  cardTitleEl.textContent = data.name;
+
+  const cardLikeBtnEl = cardElement.querySelector(".card__like-btn");
+  cardLikeBtnEl.addEventListener("click", () => {
+    cardLikeBtnEl.classList.toggle("card__like-btn_active");
+  });
+
+  const cardDeleteBtnEl = cardElement.querySelector(".card__delete-btn");
+  cardDeleteBtnEl.addEventListener("click", () => {
+    cardElement.remove();
+    cardElement = null;
+  });
+
+  return cardElement;
+}
 
 editProfileNameInput.value = profileNameElement.textContent;
 editProfileDescriptionInput.value = profileDescriptionElement.textContent;
@@ -83,10 +111,22 @@ closeButtons.forEach((button) => {
 });
 
 addPostButton.addEventListener("click", () => openModal(addCardModal));
-addCardFormElement.addEventListener("submit", handleAddCardSubmit);
 profileFormElement.addEventListener("submit", handleProfileFormSubmit);
 
+addCardFormElement.addEventListener("submit", function (evt) {
+  evt.preventDefault();
+
+  const inputValues = {
+    name: cardTitleInput.value,
+    link: cardUrlInput.value,
+  };
+
+  const cardElement = getCardElement(inputValues);
+  cardsList.prepend(cardElement);
+  addCardModal.classList.remove("modal_opened");
+});
+
 initialCards.forEach(function (item) {
-  console.log(item.name);
-  console.log(item.link);
+  const cardElement = getCardElement(item);
+  cardsList.append(cardElement);
 });
