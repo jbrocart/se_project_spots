@@ -49,6 +49,17 @@
   background-color: rgba(252, 245, 229, 0);
 }
 
+.modal__close-btn.modal__close-btn_type_preview {
+  background-image: url(../images/preview-close.svg.svg);
+  color: white;
+  top: 0;
+  right: -52.5px;
+}
+
+.modal__close-btn.modal__close-btn_type_preview:hover {
+  opacity: 1;
+}
+
 .modal__title {
   margin: 0 0 32px;
   max-width: 169px;
@@ -88,6 +99,24 @@
   color: rgba(252, 245, 229, 1);
   border-radius: 8px;
   cursor: pointer;
+}
+
+.modal__image-container {
+  position: relative;
+}
+
+.modal__image {
+  max-width: 80vh;
+  max-height: 80vh;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.modal__caption {
+  /* style correctly */
+  color: white;
 }
 
 @media screen and (max-width: 627px) {

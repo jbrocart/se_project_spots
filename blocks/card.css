@@ -68,11 +68,11 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 1;
 }
 
 .card__delete-btn:hover {
   background-image: url(../images/Delete-hover-icon.svg);
-  opacity: 1;
 }
 
 @media screen and (max-width: 627px) {
