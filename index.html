@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="HTML, CSS, grid" />
-    <meta name="description" content="spots" />
+    <meta name="Social platform" content="spots" />
     <meta name="author" content="Jeremy Brocart" />
     <link rel="stylesheet" href="./pages/index.css" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -63,10 +63,11 @@
             <label class="modal__label">
               Name
               <input
-                id="profile-name-input"
+               id="profile-name-input"
                 type="text"
                 class="modal__input"
                 placeholder="Type your name"
+                required
               />
             </label>
             <label class="modal__label">
@@ -76,6 +77,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Describe yourself"
+                required
               />
             </label>
             <button type="submit" class="modal__save-btn">Save</button>
@@ -88,21 +90,23 @@
           <h2 class="modal__title">New Post</h2>
           <form name="add_card" class="modal__form">
             <label class="modal__label">
-              Title
+              Caption
               <input
                 id="card-title-input"
                 type="text"
                 class="modal__input"
-                placeholder="Post title"
+                placeholder="Type your caption"
+                required
               />
             </label>
             <label class="modal__label">
-              Image URL
+              Image Link
               <input
                 id="card-url-input"
-                type="text"
+                type="url"
                 class="modal__input"
-                placeholder="https://unsplash.com/photos/grayscale-photography-of-mans-portrait-u8mWh3Midos"
+                placeholder="Paste a link to the picture"
+                required
               />
             </label>
             <button type="submit" class="modal__save-btn">Create</button>
