@@ -1,7 +1,7 @@
 const initialCards = [
   {
     name: "Golden Gate Bridge",
-    link: " https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
+    link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/7-photo-by-griffin-wooldridge-from-pexels.jpg",
   },
   {
     name: "Stormy sky",
@@ -24,7 +24,7 @@ const initialCards = [
     link: "https://images.unsplash.com/photo-1516683037151-9a17603a8dc7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    name: "Camping in the mountains uder the stars",
+    name: "Camping in the mountains under the stars",
     link: "https://images.unsplash.com/photo-1504851149312-7a075b496cc7?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];
@@ -91,9 +91,6 @@ function getCardElement(data) {
   return cardElement;
 }
 
-editProfileNameInput.value = profileNameElement.textContent;
-editProfileDescriptionInput.value = profileDescriptionElement.textContent;
-
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
 }
@@ -110,16 +107,17 @@ function handleProfileFormSubmit(evt) {
   profileDescriptionElement.textContent = editProfileDescriptionInput.value;
 }
 
-profileEditButton.addEventListener("click", () => openModal(editProfileModal));
+profileEditButton.addEventListener("click", () => {
+   editProfileNameInput.value = profileNameElement.textContent;
+  editProfileDescriptionInput.value = profileDescriptionElement.textContent;
+  openModal(editProfileModal);
+});
+
 closeButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const modal = button.closest(".modal");
     closeModal(modal);
   });
-});
-
-previewModalCloseBtn.addEventListener("click", () => {
-    closeModal(previewModal);
 });
 
 addPostButton.addEventListener("click", () => openModal(addCardModal));

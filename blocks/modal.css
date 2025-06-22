@@ -34,11 +34,6 @@
   border-radius: 8px;
 }
 
-.modal__close-btn:hover {
-  opacity: 1;
-  transition: 0.3s ease-in-out;
-}
-
 .modal__close-btn {
   position: absolute;
   top: 32px;
@@ -47,14 +42,18 @@
   height: 40px;
   background-image: url(../images/exit.logo.png);
   background-position: center;
-  opacity: 40%;
   border: none;
   cursor: pointer;
   background-color: rgba(252, 245, 229, 0);
+  opacity: 1;
+}
+
+.modal__close-btn:hover {
+  transition: 0.3s ease-in-out;
 }
 
 .modal__close-btn.modal__close-btn_type_preview {
-  background-image: url(../images/preview-close.svg.svg);
+  background-image: url(../images/preview-close-btn.svg);
   top: 0;
   right: -52.5px;
   opacity: 1;
