@@ -75,7 +75,6 @@
 .modal__label {
   display: flex;
   flex-direction: column;
-  gap: 8px;
   margin-bottom: 32px;
   font-size: 16px;
   font-weight: 500;
@@ -88,11 +87,17 @@
 }
 
 .modal__input {
-  padding: 16px 12px;
+  padding: 16px 0px;
   border-radius: 8px;
   font-size: 20px;
   font-weight: 500;
   border: 1px solid rgba(33, 33, 33, 0.4);
+}
+
+.modal__error {
+  color: rgba(255, 0, 0, 0.7);
+  font-size: 16px;
+  margin-top: 8px;
 }
 
 .modal__save-btn {
