@@ -94,10 +94,18 @@
   border: 1px solid rgba(33, 33, 33, 0.4);
 }
 
+.modal__input_error_state {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
 .modal__error {
   color: rgba(255, 0, 0, 0.7);
   font-size: 16px;
   margin-top: 8px;
+}
+
+.modal__save-btn:hover {
+ opacity: 0.8;
 }
 
 .modal__save-btn {
@@ -107,6 +115,12 @@
   color: rgba(252, 245, 229, 1);
   border-radius: 8px;
   cursor: pointer;
+}
+
+.modal__save-btn_disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: .5;
 }
 
 .modal__image-container {
