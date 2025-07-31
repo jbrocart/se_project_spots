@@ -40,6 +40,7 @@ const profileDescriptionElement = document.querySelector(
   ".profile__description"
 );
 const addCardFormElement = addCardModal.querySelector(".modal__form");
+const cardSubmitBtn = addCardModal.querySelector(".modal__button");
 
 const editProfileNameInput = editProfileModal.querySelector(
   "#profile-name-input"
@@ -102,13 +103,14 @@ function closeModal(modal) {
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
   closeModal(editProfileModal);
+  disableButton(cardSubmitBtn);
 
   profileNameElement.textContent = editProfileNameInput.value;
   profileDescriptionElement.textContent = editProfileDescriptionInput.value;
 }
 
 profileEditButton.addEventListener("click", () => {
-   editProfileNameInput.value = profileNameElement.textContent;
+  editProfileNameInput.value = profileNameElement.textContent;
   editProfileDescriptionInput.value = profileDescriptionElement.textContent;
   openModal(editProfileModal);
 });

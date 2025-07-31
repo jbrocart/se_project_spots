@@ -21,18 +21,22 @@ const checkInputValidity = (formEl, inputEl) => {
 const hasInvalidInput = (inputList) => {
   return inputList.some((element) => {
     return !element.validity.valid;
-});
+  });
 };
 
 const toggleButtonState = (inputList, buttonEl) => {
   if (hasInvalidInput(inputList)) {
-    buttonEl.classList.add("modal__save-btn_disabled");
-   buttonEl.disabled = true;
- } else {
+    disableButton(buttonEl);
+  } else {
     buttonEl.classList.remove("modal__save-btn_disabled");
     buttonEl.disabled = false;
   }
 };
+
+const disableButton = (buttonEl) => {
+  buttonEl.classList.add("modal__save-btn_disabled");
+    buttonEl.disabled = true;
+}
 
 const setEventListeners = (formEl) => {
   const inputList = Array.from(formEl.querySelectorAll(".modal__input"));
