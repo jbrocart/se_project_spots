@@ -72,6 +72,10 @@
   color: rgba(33, 33, 33, 1);
 }
 
+.modal__form {
+  margin-top: 32px;
+}
+
 .modal__label {
   display: flex;
   flex-direction: column;

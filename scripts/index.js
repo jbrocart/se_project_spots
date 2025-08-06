@@ -140,6 +140,7 @@ addCardFormElement.addEventListener("submit", function (evt) {
 });
 
 initialCards.forEach(function (item) {
+  console.log(item.name);
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
