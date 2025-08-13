@@ -108,11 +108,12 @@
   margin-top: 8px;
 }
 
-.modal__save-btn:hover {
- opacity: 0.8;
+.modal__save-btn:hover .profile__save-btn:hover {
+  opacity: 0.8;
 }
 
-.modal__save-btn {
+.modal__save-btn,
+.profile__save-btn {
   width: 156px;
   padding: 18px 0;
   background-color: rgba(33, 33, 33, 1);
@@ -121,10 +122,11 @@
   cursor: pointer;
 }
 
-.modal__save-btn_disabled {
+.modal__save-btn_disabled,
+.profile__save-btn_disabled {
   pointer-events: none;
   cursor: not-allowed;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .modal__image-container {
