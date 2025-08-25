@@ -112,8 +112,7 @@
   opacity: 0.8;
 }
 
-.modal__save-btn,
-.profile__save-btn {
+.modal__save-btn {
   width: 156px;
   padding: 18px 0;
   background-color: rgba(33, 33, 33, 1);
