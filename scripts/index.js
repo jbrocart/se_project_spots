@@ -39,7 +39,7 @@ const profileNameElement = document.querySelector(".profile__name");
 const profileDescriptionElement = document.querySelector(
   ".profile__description"
 );
-const profileSubmitBtn = document.querySelector(".profile__save-btn");
+const profileSubmitBtn = document.querySelector(".modal__save-btn");
 const addCardFormElement = addCardModal.querySelector(".modal__form");
 const cardSubmitBtn = document.querySelector(".modal__save-btn");
 
@@ -193,7 +193,6 @@ previewModal.addEventListener("keydown", function (event) {
 });
 
 initialCards.forEach(function (item) {
-  console.log(item.name);
   const cardElement = getCardElement(item);
   cardsList.append(cardElement);
 });
