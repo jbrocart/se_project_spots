@@ -69,4 +69,8 @@ const enableValidation = (config) => {
   });
 };
 
+function resetFormSubmit(form) {
+  form.reset();
+}
+
 enableValidation(config);

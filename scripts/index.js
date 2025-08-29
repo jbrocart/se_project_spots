@@ -39,9 +39,9 @@ const profileNameElement = document.querySelector(".profile__name");
 const profileDescriptionElement = document.querySelector(
   ".profile__description"
 );
-const profileSubmitBtn = document.querySelector(".modal__save-btn");
+const profileSubmitBtn = editProfileModal.querySelector(".modal__save-btn");
 const addCardFormElement = addCardModal.querySelector(".modal__form");
-const cardSubmitBtn = document.querySelector(".modal__save-btn");
+const cardSubmitBtn = addCardModal.querySelector(".modal__save-btn");
 
 const editProfileNameInput = editProfileModal.querySelector(
   "#profile-name-input"
@@ -162,32 +162,14 @@ editProfileModal.addEventListener("click", function (event) {
   }
 });
 
-editProfileModal.addEventListener("keydown", function (event) {
-  if (event.key === "Escape") {
-    closeModal(editProfileModal);
-  }
-});
-
 addCardModal.addEventListener("click", function (event) {
   if (event.target === addCardModal) {
     closeModal(addCardModal);
   }
 });
 
-addCardModal.addEventListener("keydown", function (event) {
-  if (event.key === "Escape") {
-    closeModal(addCardModal);
-  }
-});
-
 previewModal.addEventListener("click", function (event) {
   if (event.target === previewModal) {
-    closeModal(previewModal);
-  }
-});
-
-previewModal.addEventListener("keydown", function (event) {
-  if (event.key === "Escape") {
     closeModal(previewModal);
   }
 });
