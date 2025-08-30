@@ -69,7 +69,7 @@ const enableValidation = (config) => {
   });
 };
 
-function resetFormSubmit(form) {
+function resetForm(form) {
   form.reset();
 }
 
